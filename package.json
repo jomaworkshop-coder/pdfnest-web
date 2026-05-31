@@ -9,7 +9,7 @@
     "lint": "eslint",
     "test": "vitest run",
     "test:watch": "vitest",
-    "deploy:prod": "vercel --prod --yes && node ../_shared/google-ops/bin/post-deploy.mjs --domain=pdfnest.io --site-name=pdfnest.io --category=computers_electronics --domain-property"
+    "deploy:prod": "vercel --prod --yes && node ../_shared/google-ops/bin/post-deploy.mjs --domain=pdfnest.io --site-name=pdfnest.io --category=reference --domain-property"
   },
   "dependencies": {
     "jszip": "^3.10.1",
