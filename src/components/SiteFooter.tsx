@@ -12,16 +12,33 @@ export function SiteFooter() {
             <li><Link href="/rotate">Rotate PDF</Link></li>
             <li><Link href="/jpg-to-pdf">JPG to PDF</Link></li>
             <li><Link href="/pdf-to-jpg">PDF to JPG</Link></li>
+            <li><Link href="/pdf-to-png">PDF to PNG</Link></li>
+            <li><Link href="/page-numbers">Add Page Numbers</Link></li>
           </ul>
         </div>
         <div>
           <h3 className="font-semibold mb-2">Portfolio</h3>
-          <ul className="space-y-1 text-neutral-600 dark:text-neutral-400">
-            <li><a href="https://kalkfin.com">kalkfin</a></li>
-            <li><a href="https://kalkmate.com">kalkmate</a></li>
-            <li><a href="https://vitamath.io">vitamath</a></li>
-            <li><a href="https://unitcrate.com">unitcrate</a></li>
-            <li><a href="https://wordfox.io">wordfox</a></li>
+          <ul className="space-y-3 text-neutral-600 dark:text-neutral-400">
+            <li>
+              <a href="https://kalkfin.com" className="font-semibold hover:text-neutral-900 dark:hover:text-neutral-100">Kalkfin</a>
+              <p className="text-xs">Finance calculators</p>
+            </li>
+            <li>
+              <a href="https://kalkmate.com" className="font-semibold hover:text-neutral-900 dark:hover:text-neutral-100">Kalkmate</a>
+              <p className="text-xs">General-purpose calculators</p>
+            </li>
+            <li>
+              <a href="https://vitamath.io" className="font-semibold hover:text-neutral-900 dark:hover:text-neutral-100">Vitamath</a>
+              <p className="text-xs">Health &amp; nutrition calculators</p>
+            </li>
+            <li>
+              <a href="https://unitcrate.com" className="font-semibold hover:text-neutral-900 dark:hover:text-neutral-100">Unitcrate</a>
+              <p className="text-xs">Unit converters</p>
+            </li>
+            <li>
+              <a href="https://wordfox.io" className="font-semibold hover:text-neutral-900 dark:hover:text-neutral-100">Wordfox</a>
+              <p className="text-xs">Word tools</p>
+            </li>
           </ul>
         </div>
         <div>
@@ -36,7 +53,6 @@ export function SiteFooter() {
           <ul className="space-y-1 text-neutral-600 dark:text-neutral-400">
             <li><Link href="/about">About</Link></li>
             <li><Link href="/contact">Contact</Link></li>
-            <li><Link href="/privacy-tech">Privacy-Tech</Link></li>
           </ul>
         </div>
       </div>
