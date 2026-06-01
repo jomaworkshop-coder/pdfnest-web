@@ -14,6 +14,14 @@ interface ToolShellProps<O extends EngineOpts> {
   OptionsForm?: React.ComponentType<{ value: O; onChange: (v: O) => void }>;
 }
 
+const MIME_EXT: Record<string, string> = {
+  "application/pdf": "pdf",
+  "image/jpeg": "jpg",
+  "image/png": "png",
+  "image/webp": "webp",
+};
+function extFor(mime: string): string { return MIME_EXT[mime] ?? "bin"; }
+
 const ERROR_MESSAGES: Record<string, string> = {
   InvalidPdfError: "That file doesn't look like a valid PDF. Try a different file.",
   EncryptedPdfError: "This PDF is password-protected. Unlock it first, then try again.",
@@ -69,12 +77,12 @@ export function ToolShell<O extends EngineOpts>({ tool, engine, defaultOpts, Opt
       let name: string;
       if (Array.isArray(out)) {
         const zip = new JSZip();
-        out.forEach((b, i) => zip.file(`${tool.slug}-${i + 1}.${b.type === "application/pdf" ? "pdf" : "jpg"}`, b));
+        out.forEach((b, i) => zip.file(`${tool.slug}-${i + 1}.${extFor(b.type)}`, b));
         blob = await zip.generateAsync({ type: "blob" });
         name = `pdfnest-${tool.slug}.zip`;
       } else {
         blob = out;
-        name = `pdfnest-${tool.slug}.${out.type === "application/pdf" ? "pdf" : "bin"}`;
+        name = `pdfnest-${tool.slug}.${extFor(out.type)}`;
       }
       setDownloadUrl(URL.createObjectURL(blob));
       setDownloadName(name);

@@ -147,7 +147,7 @@ export const TOOLS: Record<string, ToolMeta> = {
     faqs: [
       { q: "Is my PDF uploaded anywhere?", a: "No. Rendering runs entirely in your browser via pdf.js." },
       { q: "What DPI should I pick?", a: "72 for web previews, 150 for general use, 300 for print quality. Higher DPI = larger files and slower rendering." },
-      { q: "Can I get PNGs instead of JPGs?", a: "JPG is the only Wave 1 output. PNG is planned for a future release." },
+      { q: "Can I get PNGs instead of JPGs?", a: "Yes — use the PDF to PNG tool. PNG preserves sharper edges; JPG is smaller for photo-heavy pages." },
       { q: "Will text be searchable?", a: "No — output is rasterized images. Use \"PDF to Word\" for editable text (coming soon)." },
     ],
     metadata: pageMetadata(
@@ -155,6 +155,32 @@ export const TOOLS: Record<string, ToolMeta> = {
       "PDF to JPG — Free Online PDF-to-Image Converter, No Upload",
       "Convert PDF pages to JPG images in your browser. No upload, no signup, no watermark.",
       ["pdf to jpg", "pdf to image", "convert pdf to jpg online free", "pdf to png"],
+    ),
+  },
+  "pdf-to-png": {
+    slug: "pdf-to-png",
+    title: "PDF to PNG",
+    cta: "Convert to PNG",
+    description: "Convert every page of a PDF to a PNG image. Lossless, browser-only.",
+    keywords: ["pdf to png", "pdf to image", "convert pdf to png online free", "pdf page to png"],
+    accept: "application/pdf",
+    multi: false,
+    howItWorks: [
+      "Drop a single PDF file into the box above.",
+      "Pick DPI — higher means sharper, larger files.",
+      "Click Convert to PNG and download the zip of images.",
+    ],
+    faqs: [
+      { q: "Is my PDF uploaded anywhere?", a: "No. Rendering runs entirely in your browser via pdf.js." },
+      { q: "PNG or JPG — which should I pick?", a: "PNG is lossless and best for screenshots, diagrams, and pages with text. JPG is smaller for photo-heavy pages but adds compression artifacts." },
+      { q: "What DPI should I pick?", a: "72 for web previews, 150 for general use, 300 for print quality." },
+      { q: "Do PNGs preserve transparency?", a: "Yes — page areas that are transparent in the source PDF stay transparent in the PNG." },
+    ],
+    metadata: pageMetadata(
+      "pdf-to-png",
+      "PDF to PNG — Free Online PDF-to-PNG Converter, No Upload",
+      "Convert PDF pages to PNG images in your browser. Lossless. No upload, no signup, no watermark.",
+      ["pdf to png", "pdf to image", "convert pdf to png online free", "pdf page to png"],
     ),
   },
 };

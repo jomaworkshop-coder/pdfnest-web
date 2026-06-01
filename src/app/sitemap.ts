@@ -9,6 +9,7 @@ const ROUTES = [
   "/rotate",
   "/jpg-to-pdf",
   "/pdf-to-jpg",
+  "/pdf-to-png",
   "/privacy-tech",
   "/about",
   "/contact",
