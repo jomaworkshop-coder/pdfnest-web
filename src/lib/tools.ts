@@ -209,4 +209,30 @@ export const TOOLS: Record<string, ToolMeta> = {
       ["add page numbers to pdf", "pdf page numbers", "number pdf pages online free"],
     ),
   },
+  watermark: {
+    slug: "watermark",
+    title: "Watermark PDF",
+    cta: "Add Watermark",
+    description: "Stamp a text watermark onto every page. Diagonal, centered, or corner. Browser-only.",
+    keywords: ["watermark pdf", "add watermark to pdf", "pdf watermark online free", "draft stamp pdf"],
+    accept: "application/pdf",
+    multi: false,
+    howItWorks: [
+      "Drop a single PDF file into the box above.",
+      "Type your watermark text, pick position, opacity, size, and color.",
+      "Click Add Watermark and download the result.",
+    ],
+    faqs: [
+      { q: "Is my PDF uploaded anywhere?", a: "No. Watermarking runs entirely in your browser." },
+      { q: "Can I use an image as a watermark?", a: "Wave 2 supports text only. Image watermarks are planned." },
+      { q: "Does this remove existing watermarks?", a: "No — it adds a new watermark on top. There's no reliable way to remove watermarks from arbitrary PDFs." },
+      { q: "What's a good opacity for a DRAFT stamp?", a: "0.2–0.3 with a 60–80pt diagonal red or gray is the common pattern." },
+    ],
+    metadata: pageMetadata(
+      "watermark",
+      "Watermark PDF — Free Online Watermark Tool, No Upload",
+      "Add a text watermark to every page of a PDF in your browser. Diagonal, centered, or corner. No upload, no signup.",
+      ["watermark pdf", "add watermark to pdf", "pdf watermark online free", "draft stamp pdf"],
+    ),
+  },
 };
