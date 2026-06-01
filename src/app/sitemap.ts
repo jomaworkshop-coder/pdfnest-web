@@ -7,6 +7,7 @@ const ROUTES = [
   "/merge",
   "/split",
   "/rotate",
+  "/crop",
   "/jpg-to-pdf",
   "/pdf-to-jpg",
   "/pdf-to-png",

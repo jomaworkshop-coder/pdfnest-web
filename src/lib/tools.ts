@@ -261,4 +261,30 @@ export const TOOLS: Record<string, ToolMeta> = {
       ["organize pdf", "reorder pdf pages", "rearrange pdf pages", "delete pdf pages online free"],
     ),
   },
+  crop: {
+    slug: "crop",
+    title: "Crop PDF",
+    cta: "Crop PDF",
+    description: "Trim margins off every page. Type margins in inches, millimeters, or points. Browser-only.",
+    keywords: ["crop pdf", "trim pdf margins", "pdf margin remover", "crop pdf online free"],
+    accept: "application/pdf",
+    multi: false,
+    howItWorks: [
+      "Drop a single PDF file into the box above.",
+      "Set how much to trim from each side, in your preferred unit.",
+      "Click Crop PDF and download the result.",
+    ],
+    faqs: [
+      { q: "Is my PDF uploaded anywhere?", a: "No. Cropping runs entirely in your browser." },
+      { q: "Is the crop reversible?", a: "Yes — we set the CropBox without modifying the underlying page content. Any reader that respects the MediaBox can recover the original. Use \"reset crop\" in your reader (often View → Reset)." },
+      { q: "Will the file get smaller?", a: "Minimally. CropBox is a metadata change, not a re-render. For real size reduction use the Compress PDF tool (Wave 3)." },
+      { q: "Can I crop different pages differently?", a: "Not yet — current crop applies to all pages uniformly. Per-page crop is planned." },
+    ],
+    metadata: pageMetadata(
+      "crop",
+      "Crop PDF — Trim Margins Online, Free, No Upload",
+      "Crop PDF pages in your browser. Trim margins in inches, mm, or points. No upload, no signup, no watermark.",
+      ["crop pdf", "trim pdf margins", "pdf margin remover", "crop pdf online free"],
+    ),
+  },
 };
