@@ -235,4 +235,30 @@ export const TOOLS: Record<string, ToolMeta> = {
       ["watermark pdf", "add watermark to pdf", "pdf watermark online free", "draft stamp pdf"],
     ),
   },
+  organize: {
+    slug: "organize",
+    title: "Organize PDF",
+    cta: "Build New PDF",
+    description: "Reorder, delete, and rotate PDF pages. Specify the exact order you want. Browser-only.",
+    keywords: ["organize pdf", "reorder pdf pages", "rearrange pdf pages", "delete pdf pages online free"],
+    accept: "application/pdf",
+    multi: false,
+    howItWorks: [
+      "Drop a single PDF file into the box above.",
+      "List the page numbers in the order you want, e.g. \"3,1,5-7\". Omit any page to delete it.",
+      "Optionally rotate all selected pages, then click Build New PDF.",
+    ],
+    faqs: [
+      { q: "Is my PDF uploaded anywhere?", a: "No. Page assembly runs entirely in your browser." },
+      { q: "How does the page order syntax work?", a: "Comma-separated numbers and ranges, in the order you want them. \"3,1,4-5\" gives you page 3 first, then page 1, then pages 4 and 5. Any page not listed is removed." },
+      { q: "Can I duplicate a page?", a: "Yes — list the same page number twice (e.g. \"1,1,2\")." },
+      { q: "Can I rotate one page differently from another?", a: "Not yet — the current rotation applies to all selected pages. Use the Rotate PDF tool first if you need per-page rotation." },
+    ],
+    metadata: pageMetadata(
+      "organize",
+      "Organize PDF — Reorder, Delete, Rotate Pages. Free, No Upload",
+      "Reorder, delete, and rotate PDF pages in your browser. Pick the exact order. No upload, no signup, no watermark.",
+      ["organize pdf", "reorder pdf pages", "rearrange pdf pages", "delete pdf pages online free"],
+    ),
+  },
 };
