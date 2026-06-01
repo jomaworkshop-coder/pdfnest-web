@@ -8,6 +8,8 @@ const TOOL_LINKS = [
   { slug: "rotate", label: "Rotate PDF" },
   { slug: "jpg-to-pdf", label: "JPG to PDF" },
   { slug: "pdf-to-jpg", label: "PDF to JPG" },
+  { slug: "pdf-to-png", label: "PDF to PNG" },
+  { slug: "add-page-numbers", label: "Add Page Numbers" },
 ];
 
 function toggleTheme() {
