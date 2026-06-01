@@ -14,6 +14,7 @@ const ROUTES = [
   "/organize",
   "/page-numbers",
   "/watermark",
+  "/fill-sign",
   "/privacy-tech",
   "/about",
   "/contact",

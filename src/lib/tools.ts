@@ -287,4 +287,30 @@ export const TOOLS: Record<string, ToolMeta> = {
       ["crop pdf", "trim pdf margins", "pdf margin remover", "crop pdf online free"],
     ),
   },
+  "fill-sign": {
+    slug: "fill-sign",
+    title: "Fill & Sign PDF",
+    cta: "Apply & Download",
+    description: "Add typed text and a drawn signature to a PDF. Browser-only — your signature never leaves your device.",
+    keywords: ["fill and sign pdf", "sign pdf online free", "esign pdf", "add signature to pdf"],
+    accept: "application/pdf",
+    multi: false,
+    howItWorks: [
+      "Drop a single PDF file into the box above.",
+      "For each field: type text or draw your signature, pick a page and (x, y) position, click Add placement.",
+      "Stack as many placements as you need, then click Apply & Download.",
+    ],
+    faqs: [
+      { q: "Is my signature uploaded anywhere?", a: "No. Drawing, embedding, and PDF assembly all run in your browser. Your handwritten signature never leaves your device." },
+      { q: "Is the signature legally binding?", a: "In most jurisdictions a typed name or drawn mark counts as an electronic signature, but for high-stakes contracts use a qualified e-sign service that adds tamper evidence." },
+      { q: "Why coordinates and not click-to-place?", a: "Wave 2 ships form-driven placement. Click-to-place visual preview is on the roadmap. PDF coordinates: bottom-left is (0, 0); 1 inch = 72 pt." },
+      { q: "Can I save a signature for reuse?", a: "Not yet — each session draws fresh. Saved signatures are planned." },
+    ],
+    metadata: pageMetadata(
+      "fill-sign",
+      "Fill & Sign PDF — Free Online E-Sign, No Upload",
+      "Add text and a drawn signature to a PDF in your browser. Your signature never leaves your device. No upload, no signup.",
+      ["fill and sign pdf", "sign pdf online free", "esign pdf", "add signature to pdf"],
+    ),
+  },
 };

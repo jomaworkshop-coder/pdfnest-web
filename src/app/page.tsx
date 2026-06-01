@@ -2,7 +2,7 @@ import Link from "next/link";
 import { TOOLS } from "@/lib/tools";
 import { PrivacyBadge } from "@/components/PrivacyBadge";
 
-const TOOL_ORDER = ["merge", "split", "rotate", "crop", "jpg-to-pdf", "pdf-to-jpg", "pdf-to-png", "organize", "page-numbers", "watermark"];
+const TOOL_ORDER = ["merge", "split", "rotate", "crop", "jpg-to-pdf", "pdf-to-jpg", "pdf-to-png", "organize", "page-numbers", "watermark", "fill-sign"];
 
 const ORGANIZATION_JSONLD = {
   "@context": "https://schema.org",
