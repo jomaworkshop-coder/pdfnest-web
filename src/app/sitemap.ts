@@ -10,6 +10,7 @@ const ROUTES = [
   "/jpg-to-pdf",
   "/pdf-to-jpg",
   "/pdf-to-png",
+  "/page-numbers",
   "/privacy-tech",
   "/about",
   "/contact",

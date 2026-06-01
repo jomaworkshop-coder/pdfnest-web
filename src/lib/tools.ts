@@ -183,4 +183,30 @@ export const TOOLS: Record<string, ToolMeta> = {
       ["pdf to png", "pdf to image", "convert pdf to png online free", "pdf page to png"],
     ),
   },
+  "page-numbers": {
+    slug: "page-numbers",
+    title: "Add Page Numbers",
+    cta: "Add Page Numbers",
+    description: "Stamp page numbers onto a PDF. Pick position, starting number, skip cover. Browser-only.",
+    keywords: ["add page numbers to pdf", "pdf page numbers", "number pdf pages online free"],
+    accept: "application/pdf",
+    multi: false,
+    howItWorks: [
+      "Drop a single PDF file into the box above.",
+      "Pick where the numbers go, the starting number, and whether to skip the cover.",
+      "Click Add Page Numbers and download the result.",
+    ],
+    faqs: [
+      { q: "Is my PDF uploaded anywhere?", a: "No. Stamping runs entirely in your browser." },
+      { q: "Can I skip the cover page?", a: "Yes — enable \"Skip first page\" and numbering starts on page 2." },
+      { q: "Can I change the starting number?", a: "Yes — set any positive integer (handy for multi-volume documents)." },
+      { q: "Are existing page numbers removed?", a: "No. This adds new numbers; it does not edit or strip existing ones." },
+    ],
+    metadata: pageMetadata(
+      "page-numbers",
+      "Add Page Numbers to PDF — Free Online, No Upload",
+      "Add page numbers to PDF in your browser. Pick position, starting number, skip cover. No upload, no signup, no watermark.",
+      ["add page numbers to pdf", "pdf page numbers", "number pdf pages online free"],
+    ),
+  },
 };
