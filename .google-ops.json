@@ -1,0 +1,18 @@
+{
+  "domain": "pdfnest.io",
+  "siteName": "pdfnest.io",
+  "category": "reference",
+  "registeredAt": "2026-05-31T19:02:45.517Z",
+  "ga4": {
+    "accountName": "accounts/393431220",
+    "propertyName": "properties/539661404",
+    "propertyId": "539661404",
+    "measurementId": "G-JVY1NM1HBW",
+    "streamName": "properties/539661404/dataStreams/14978529967"
+  },
+  "gsc": {
+    "siteUrl": "sc-domain:pdfnest.io",
+    "alreadyExisted": true
+  },
+  "sitemap": "https://pdfnest.io/sitemap.xml"
+}
